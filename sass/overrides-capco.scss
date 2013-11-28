@@ -1,0 +1,145 @@
+@import "settings";
+
+
+// Override Foundation 3 variables here!!! 
+$panelColor: #e0e0e0; 
+
+
+
+
+
+// Import items
+@import "foundation";
+@import "compass/css3";
+@import "foundation/components/modules/offcanvas";
+@import "font-awesome.min";
+@import "liquidslider";
+@import "flexslider";
+@import "styles";
+@import "offcanvas-navbar";
+@import "modules";
+
+
+
+/*
+--------------------------------------------------
+COLOR SWATCHES 
+--------------------------------------------------
+*/
+
+$black: #231f20;
+$swatch-0: #a0926b; // Gold
+$swatch-1: #77767b;	// Mid Gray
+$swatch-2: #e0e0e0; //very light gray
+$swatch-3: #c0b99d; //light gold
+
+$goldcapco: #a0926b; // Gold
+$midgrey: #77767b;	// Mid Gray
+$lightgrey: #e0e0e0; //very light gray
+$lightgold: #c0b99d; //light gold
+
+
+
+
+
+
+a {
+    color: $swatch-0;
+    &:hover{
+        color: $swatch-3;
+    }
+}
+
+
+.entry-title , .home-title{
+	color: $swatch-0;
+	a:hover {
+		color: $swatch-3;
+	}
+}
+
+
+.button {
+	background: $goldcapco;
+	&:hover {
+		background: $lightgold;
+	}
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------
+	IMPORTED MODULES
+
+	Modules are imported from the modules.scss file
+	Change the variables to modify the color values.
+*/
+.top-nav {
+	@include top-nav (
+		$black 			/* Border */,
+		$black 			/* Link */ , 
+		$swatch-0 		/* Link-hover */ , 
+		$black 			/* Ancestor Link */,
+		$swatch-0 		/* Ancestor Link Hover */ 
+	);
+}
+
+.postmetadata {
+//@mixin postmetadata( $text , $link , $link-hover , $icon) 
+	@include postmetadata ($swatch-0 , $swatch-0 , $swatch-3 , $swatch-0);	
+}
+
+
+.large-list-two {
+	@include large-list-two(  
+		$black  	/* heading */, 
+		$black 		/* paragraph */,    
+		$black 		/* link */, 
+		$orange 	/* link hover */, 
+		$lightgrey 		/* border color */, 
+		"../img/edge/edge-gradient.jpg" /* background image  if needed*/, 
+		lighten($lightgold , 60% ),	/* background hover */
+		$midgrey    /* Icon */
+		);
+}
+
+
+.panel-header {
+	//@mixin panel-header( $background , $color , $link , $link-hover) 
+	@include panel-header (
+		#f4f4f4 /* background */,
+		$black /* Color */,
+		$black /* link */,
+		$black /* link-hover */
+	);
+}
+
+.panel-sm {
+	//@mixin panel-sm ($color , $link, $link-hover, $border , $background)
+	@include panel-sm (
+		$black /* color */,
+		$goldcapco /* link */, 
+		$lightgold /* link-hover */, 
+		$black /* border */, 
+		lighten($lightgrey, 8%) /* background */
+		);
+}
+
+.l-footer {
+	@include footer ( 
+			$swatch-2 		/* Background */, 
+			$black 			/* Text */ , 
+			darken($swatch-0 , 10%) 	/* link */,  
+			lighten($black, 10%) 	/* Link Hover */, 
+			$swatch-0		/* Social link */, 
+			$swatch-3		/* Social link hover */, 
+			$black			/* Credits */
+	); 
+	padding-bottom: 20px;
+}
+
+

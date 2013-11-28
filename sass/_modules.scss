@@ -1,0 +1,456 @@
+@import "compass/css3";
+
+@import "settings";
+@import "modular-scale";
+
+//@import "foundation/common/ratios";
+
+// Variables for modular scale.
+// Make sure these are in
+//$ratio: $golden;
+//$base-size: 14px 44px;
+
+@mixin top-nav ($border , $link , $link-hover, $ancestor-link , $ancestor-link-hover ){
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid $border;
+
+    ul {
+        margin: 0;
+    }
+    
+    a {
+        color: $link;
+        padding: 8px 27px 8px 0;
+        display: block;
+        text-transform: uppercase;
+        font-size: 16px;
+        &:hover {
+            color: $link-hover;  
+        }
+        @media (min-width: 1024px) {
+            padding-right: 49px;
+        }  
+    }
+
+    li {
+        float: left;
+        list-style: none;
+
+        &.active, 
+        &.current-page-ancestor {
+            a {
+                color: $ancestor-link;
+                &:hover {
+                    color: $ancestor-link-hover;
+                }
+            }
+            border-bottom-width: 5px;
+            border-bottom-style: solid; 
+            border-color: $border;       
+        } 
+
+        a[title="inside-homepage"] {
+            color: white;
+            &:before {
+                font-family: "Fontawesome";
+                content: "\f015";
+                color: $link;
+                font-size: 20px;
+                line-height: 1px;
+            }
+        }  
+    }
+}
+
+@mixin sub-nav( $border , $link, $link-hover , $currnet-text , $current-border) {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid $border;
+
+    ul {
+        margin: 0;
+    }
+    
+    a {
+        color: $link;
+        padding: 8px 27px 8px 0;
+        display: block;
+        text-transform: uppercase;
+        font-size: 16px;
+        &:hover {
+            color: $link-hover;  
+        }
+        @media (min-width: 1024px) {
+            padding-right: 62px;
+        }   
+    }
+
+    li {
+        float: left;
+        list-style: none;
+
+        &.active, 
+        &.current-page-ancestor {
+            a {
+                color: $currnet-text;
+            }
+            border-bottom-width: 5px;
+            border-bottom-style: solid; 
+            border-color: $current-border;       
+        }   
+    }
+}
+
+
+@mixin panel( $background , $hr) {
+    //border: solid 1px #e6e6e6;
+    border: none;
+    margin: 0 0 22px 0;
+    padding: 20px; 
+    background: $background;
+
+    h2:first-of-type, h3:first-of-type {
+        margin-top: 0;
+    }
+
+    hr {
+        border-color: $hr;
+    }
+}
+
+
+@mixin panel-header( $background , $color , $link , $link-hover) {
+    font-family: $serifFont;
+    margin: 0;
+    background: $background;
+    color: $color;
+    font-size: ms(3);
+    padding: 15px;
+}
+
+
+@mixin panel-sm ($color , $link, $link-hover, $border , $background) {
+    @extend .panel;
+    padding: 15px;  
+    background: $background;
+
+    h2 {
+        text-transform: uppercase;
+        color: $color;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    } 
+    hr {
+        margin: 5px 0 ;
+        border-color: $border;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+            p {
+                margin-bottom: 0;
+            }
+            hr {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@mixin large-list-two( $heading, $paragraph , $link, $link-hover, $border, $background, $background-hover, $icon)  {
+    border-top: 1px solid $border;
+
+    h1, h2 , h3 {
+        font-family: Didot,"Didot LT STD","ltc-bodoni-175","Hoefler Text",Garamond,"Times New Roman",serif;
+        color: $heading;
+        text-align: left;
+        font-weight: 300;
+        font-size: ms(4);
+        margin-top: 0;
+        letter-spacing: 0.75px;
+        margin-top: -4px;
+        margin-bottom: 0;
+
+    }
+
+    a {
+        color: $link;
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+    p {
+        margin-top: 17px;
+        margin-bottom: 0;
+        font-size: ms(0);
+        color: $paragraph;
+    }
+    time {
+        //font-size: 20px;
+    }
+    > ul >li {
+        list-style: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: transparent;
+        @include transition(0.3s , background);
+        background: url($background) center center;
+        background-repeat: repeat-y;
+        &:hover {
+            background: $background-hover;
+        }
+
+        @media (min-width: 1200px) {
+            &:hover {
+                .fa.fa-arrow-circle-right {
+                    right: 10px;
+                }                
+            }
+        }
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-color: $border;
+    }
+
+    .list-content {
+        //overflow: hidden;
+        //min-height: 110px;
+        position: relative;
+        //height:auto !important; 
+        //height: 150px;
+        display: block;
+        overflow: hidden;
+    }
+    .thumb {
+        float: left;
+        width: 30%;
+        margin-right: 20px;
+        font-size: 0;
+    } 
+
+    .thumb-absolute {
+        //position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0;
+        height: 100%;
+        width: 30%;
+        float: left;
+        margin-right: 30px;
+
+        a {
+            font-size: 0;
+        }
+    }
+
+    .list-content-text {
+        width: 60%;
+        display: inline-block;
+       // margin-left: 30%;
+    }
+
+    .fa.fa-arrow-circle-right {
+        @include transition(0.3s all);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-size: 20px;
+        margin-top: -10px;
+        color: $icon;
+    }
+}
+
+
+@mixin postmetadata( $text , $link , $link-hover , $icon) {
+    margin-left: 2px;
+    li {
+            list-style: none;
+            display: inline-block;
+            margin:0  20px 0 0;
+            padding-top: 0;
+            color: $text;
+            font-size: ms(0);
+    }
+
+    i {
+            margin-right: 6px;
+            color: $icon;
+    }
+    time {
+        color: $text;
+        a {
+            color: $link;
+            &:hover {
+                color: $link;
+            }
+        }
+            //margin-left: 10px;
+    }
+
+    a {
+        color: $link;
+        &:hover {
+            color: $link;
+        }
+    }
+}
+
+
+@mixin pagination( $border, $color, $hover , $current ) {
+        margin-top: 60px;
+
+        text-align: left;
+
+        ul {
+            font-size: 0;
+        }
+
+
+        a.page-numbers , span.page-numbers {
+            font-family: $serifFont;    
+            padding: 2px 17px 1px;
+            border-top: 1px solid $border;
+            border-bottom: 1px solid $border;
+            font-size: ms(3);
+            display: block;
+
+            color: $color;
+            &:hover {
+                color: $hover;
+                border-color: $hover;
+                &:after {
+                    color: $hover;
+                }
+
+            }
+        }
+
+        a.next.page-numbers {
+            //text-indent: 100px;
+            color: transparent;
+            text-indent: -12px;
+            padding-right: 24px;
+            position: relative;
+            width: 47px;
+            &:after{
+                font-family:"Fontawesome";
+                content: "\f0da";
+                color: $color;
+                position: absolute;
+                font-size: ms(1);
+                top: 10px;
+                left: 33px;
+            }
+        }
+
+        a.prev.page-numbers {
+            //text-indent: 100px;
+            color: transparent;
+            text-indent: -12px;
+            padding-right: 24px;
+            position: relative;
+            width: 47px;
+            &:hover {
+                color: transparent;
+            }
+            &:after{
+                font-family:"Fontawesome";
+                content: "\f0d9";
+                color: $color;
+                position: absolute;
+                font-size: ms(1);
+                top: 10px;
+                left: 33px;
+            }
+        }
+
+        .page-numbers.current {
+            display: block;
+            color: $current;
+            border-color: $current;
+        }
+
+}
+
+
+
+
+
+@mixin footer ( $background, $text , $link ,  $link-hover , $social , $social-hover , $credits) {
+
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    background: $background;
+    color: $text;
+    padding-top: 40px;
+
+        p {
+            line-height: 22px;
+            a {
+                color: $link;
+                &:hover {
+                    color: $link-hover;
+                }
+            }
+        }
+
+        a {
+            color: $link;
+            @include transition (0.3s, color);
+            &:hover {
+                color: $link-hover;
+            }
+        }
+    
+
+    .l-credits {
+        margin-top: -61px;
+        //margin-bottom: 20px;
+        color: $credits;
+    }
+
+
+    .footer-links {
+        color: $text;
+        ul {
+            padding:0;
+            margin: 0 0 20px 0;
+        }
+        li {
+            list-style: none;
+        }
+    }
+
+    .footer-social {
+        li {
+            float: left;
+            margin-right: 15px;
+            margin-top: 15px;
+
+            a {
+                color: $social;
+                &:hover {
+                    color: $social-hover;
+                }
+            }
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+}

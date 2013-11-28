@@ -1,0 +1,223 @@
+
+
+
+
+
+<div class="row">
+    <div class="eight columns">
+        <article class="l-article">
+            <h2><a href="#">The Edge November</a></h2>
+            <!--
+            <ul class="postmetadata">
+                <li clsss="date"><i class="fa fa-clock-o"></i><time>1<sup>st</sup> November, 2013</time></li>
+                <li><i class="fa fa-tag"></i>Tags: <a href="#">London</a>, <a href="#">Conference</a>, <a href="#">Food</a></li>
+            </ul>
+        -->
+            <p>But first, the good news… In the week prior to ‘The Edge’ being published firmwide, each department shares their own departmental ‘Edge’ newsletter. Work highlights are then gleaned from these to be included in the firmwide communication. Access to each departmental ‘Edge’ newsletter is provided here.   Update from London: Corporate The Corporate Edge King [...]</p>
+        </article>
+
+        <article class="l-article">
+            <h2><a href="#">The Edge October</a></h2>
+            <p>But first, the good news… In the week prior to ‘The Edge’ being published firmwide, each department shares their own departmental ‘Edge’ newsletter. Work highlights are then gleaned from these to be included in the firmwide communication. Access to each departmental ‘Edge’ newsletter is provided here.   Update from London: Corporate The Corporate Edge King [...]</p>
+        </article>
+
+        <article class="l-article">
+            <h2><a href="#">The Edge September</a></h2>
+            <p>But first, the good news… In the week prior to ‘The Edge’ being published firmwide, each department shares their own departmental ‘Edge’ newsletter. Work highlights are then gleaned from these to be included in the firmwide communication. Access to each departmental ‘Edge’ newsletter is provided here.   Update from London: Corporate The Corporate Edge King [...]</p>
+        </article>
+
+        <article class="l-article">
+            <table class="twelve">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Text</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong class="swatch-0">Name Surname</strong></td>
+                  <td>who joined Human Resources as an L&D Administrator (18 September)</td>
+                </tr>
+                <tr>
+                  <td><strong class="swatch-0">Name Surname</strong></td>
+                  <td>who joined Human Resources as an L&D Administrator (18 September)</td>
+                </tr>
+                <tr>
+                  <td><strong class="swatch-0">Name Surname</strong></td>
+                  <td>who joined Human Resources as an L&D Administrator (18 September)</td>
+                </tr>
+              </tbody>
+            </table>
+        </article>
+    </div>
+
+    <div class="four columns">
+        <div class="l-sidebar-item">
+            <div class="panel-list">
+                <ul>
+                            <li><h2>Latest</h2></li>
+                            <li>
+                                <h3>Latest news item</h3>
+                                <p>Intro copy for latest news and link to full article if needed.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h3>Latest news item</h3>
+                                <p>Intro copy for latest news and link to full article if needed.</p>
+                                <hr>
+                            </li>
+
+                            <li>
+                                <h3>Latest news item</h3>
+                                <p>Intro copy for latest news and link to full article if needed.</p>
+                                <hr>
+                            </li>
+                </ul>
+            </div>
+        </div><!-- sidebar-item -->
+        <div class="l-sidebar-item">
+                        <div class="panel teaser">
+                                        <div class="flexslider-sidebar">
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;"></div>
+
+                        <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul><div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1600%; transition: 0.6s; -webkit-transition: 0.6s; -webkit-transform: translate3d(-789px, 0, 0);"><li class="clone" aria-hidden="true" style="width: 263px; float: left; display: block;"><h3><a href="http://www.mishcon.com/enlighten">Mishcon Enlighten</a></h3>
+                        <p>Knowledge is the most important currency in business today.</p>
+                        <p class="followus"><a href="http://www.mishcon.com/enlighten/">Visit Mishcon Enlighten »</a></p></li><li class="clone" aria-hidden="true" style="width: 263px; float: left; display: block;"><h3><a href="http://businessshapers.co.uk">Business Shapers</a></h3>
+                        <p>Sharing and celebrating the knowledge, innovation and creativity that is shaping the business world.</p>
+                        <p class="followus"><a href="http://businessshapers.co.uk">Visit Business Shapers »</a></p></li>
+
+                        <li class="" style="width: 263px; float: left; display: block;"><h3><a href="http://www.mishcon.com/enlighten">Mishcon Enlighten</a></h3>
+                        <p>Knowledge is the most important currency in business today.</p>
+                        <p class="followus"><a href="http://www.mishcon.com/enlighten/">Visit Mishcon Enlighten »</a></p></li><li style="width: 263px; float: left; display: block;" class="flex-active-slide"><h3><a href="http://www.mishcon.com/enlighten">Lawfully Chic</a></h3>
+                        <p>A blog for art-lovers and adventurers, fashionistas and culture vultures, who believe in fair play, fair trade and fair travel.</p>
+                        <p class="followus"><a href="http://lawfullychic.com/">Visit Lawfully Chic »</a></p></li>
+
+                        <li style="width: 263px; float: left; display: block;" class=""><h3><a href="http://businessshapers.co.uk">Business Shapers</a></h3>
+                        <p>Sharing and celebrating the knowledge, innovation and creativity that is shaping the business world.</p>
+                        <p class="followus"><a href="http://businessshapers.co.uk">Visit Business Shapers »</a></p></li>
+
+
+                          <li class="clone" aria-hidden="true" style="width: 263px; float: left; display: block;"><h3><a href="http://www.mishcon.com/enlighten">Mishcon Enlighten</a></h3>
+                        <p>Knowledge is the most important currency in business today.</p>
+                        <p class="followus"><a href="http://www.mishcon.com/enlighten/">Visit Mishcon Enlighten »</a></p></li><li class="clone" aria-hidden="true" style="width: 263px; float: left; display: block;"><h3><a href="http://businessshapers.co.uk">Business Shapers</a></h3>
+                        <p>Sharing and celebrating the knowledge, innovation and creativity that is shaping the business world.</p>
+                        <p class="followus"><a href="http://businessshapers.co.uk">Visit Business Shapers »</a></p></li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a>1</a></li><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li><li><a>5</a></li><li><a>6</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                        </div>          
+                        </div>
+        </div>
+
+        <div class="l-sidebar-item">
+            <div class="panel">
+                <h3>Archives</h3>
+                <ul class="no-list">
+                    <li><a href="#">Month</a></li>
+                    <li><a href="#">Month</a></li>
+                    <li><a href="#">Month</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="six columns">
+        <article class="l-article">
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title">
+                      <h5>Accordion Panel 1</h5>
+                    </div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h5>Accordion Panel 2</h5>
+                    </div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h5>Accordion Panel 3</h5>
+                    </div>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </li>
+                </ul>
+        </article>
+    </div>
+
+    <div class="six columns">
+        <div class="l-article">
+            <div class="panel">
+                <img src="http://internal.mishcon.com/the-edge/wp-content/uploads/2013/04/Edge-Video-Cover-April-2013-300x174.jpg" />
+            </div>
+
+            <div class="panel">
+                <img src="http://internal.mishcon.com/the-edge/wp-content/uploads/2012/05/mdrsizzlethumb-300x168.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="row hide">
+      <div class="twelve columns l-article">
+
+        <hr>
+        <h1>Fatures</h1>
+      
+         <section class="features clearfix">
+            <!-- Liquid Slider Starts Here -->
+            <div id="slider-id-wrapper" class="liquid-slider-wrapper liquid-responsive hidden-slider">     
+               <div class="liquid-slider" id="slider-id">
+                <!-- SLIDE 1 -->
+                  <div class="panel latest large">
+                    <header>
+                      <div class="row">
+                        <div class="four columns mobile-one">
+                           <i class="icon-fixed-width icon-play-sign"></i>
+                        </div>
+                        <div class="eight columns mobile-three text-right">
+                           <time>02 Apr 2013</time>
+                        </div>
+                      </div>
+                    </header>
+                    <h2><a href="/?p=781">Daniel Farrand</a></h2>
+                    <p>Tension between public engagement and swift, certain decision making is inevitable in a democratic planning system and the way that balance is struck will always be controversial for some. <q>Do you think the balance is right in the current system?</q> <i class="fa fa-angle-right"></i></p>
+                    <figure><a href="/?p=781"><img src="http://placehold.it/700x300" alt="Daniel Farrand" /></a></figure>
+                  </div>
+
+
+
+
+               </div>
+               <div class="arrows">
+                  <a class="first arrow-left"><i class="fa fa-angle-left"></i></a>
+                  <a class="first arrow-right"><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <!-- Liquid Slider Ends Here -->
+            <div class="slider-tab-panel first"></div>
+        </section>
+      </div>  
+   </div>

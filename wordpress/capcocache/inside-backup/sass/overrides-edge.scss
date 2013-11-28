@@ -1,0 +1,126 @@
+@import "modules";
+
+
+
+$edge-1: #ECE8E3;
+
+.l-top-nav {
+	border-bottom: none;
+}
+
+.l-footer {
+	margin-top: 0;
+}
+.edge-content {
+	background: $edge-1;
+	padding-bottom: 50px;
+}
+
+.content-custom {
+	background: $edge-1;
+	padding-bottom: 50px;	
+}
+
+.edge-strap {
+	float: right;
+	margin-top: 18px;
+}
+
+/* Intro Image */
+.intro .intro-image, .intro .intro-image-2 {
+	border-color: $edge-1;
+	background: white;
+}
+
+.sub-nav {
+	//@mixin top-nav( $border , $link, $link-hover , $currnet-text , $current-border) 
+	@include sub-nav($orange , $orange ,$black , $orange , $orange);
+}
+
+.panel {
+	@include panel( white , $black);
+}
+
+.panel, .panel-sm, .panel-list, .panel-md, .panel-sm, .panel-xs {
+		background: white;
+}
+
+
+.large-list-two {
+	//@mixin large-list-two( $heading, $paragraph , $link, $link-hover, $border, $background) 
+	@include large-list-two(  $black , $black ,    $black, $orange , $black , "../img/edge/edge-gradient.jpg" , white );
+}
+
+
+div.pagination-centered {
+	//@mixin pagination( $border, $color, $hover , $current ) 
+	@include pagination ( $black, $black, $orange, $orange );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	Slider & old css
+*/
+	.edge-content .panel, .edge-content .panel-sm, .edge-content .panel-list, .edge-content .panel-md, .edge-content .panel-sm, .edge-content .panel-list, .edge-content .panel-list, .edge-content .panel-md {
+		background: white;
+	}
+	.slider-id-panel.panel, .slider-id-panel.panel-sm, .slider-id-panel.panel-list, .slider-id-panel.panel-md, .slider-id-2-panel.panel, .slider-id-2-panel.panel-sm, .slider-id-2-panel.panel-list, .slider-id-2-panel.panel-md {
+		border-color: $edge-1;
+	}
+
+	.slider-tab-panel #monitor-slider-nav-ul.inline-list li a, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li a {
+		border-color: $edge-1;
+	}
+
+	#slider-id-wrapper a.arrow-left, #slider-id-2-wrapper a.arrow-left {
+		color: $black;
+	}
+	#slider-id-wrapper a.arrow-right, #slider-id-2-wrapper a.arrow-right {
+		color: $black;
+	}
+
+
+	.panel.latest h2 a, .latest.panel-xs h2 a, .latest.panel-sm h2 a, .latest.panel-list h2 a, .latest.panel-md h2 a {
+		&:hover {
+			color: $black;
+		}	
+	}
+
+
+	/* Slider Navigation Lines */
+	.slider-tab-panel #monitor-slider-nav-ul.inline-list li, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li {
+		background-color: $orange;
+	}
+	.slider-tab-panel #monitor-slider-nav-ul.inline-list li.active, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li.active {
+		background-color: $black;
+	}
+
+	#slider-id-wrapper , #slider-id-2-wrapper {
+		a.arrow-left , a.arrow-right {
+			color: $orange;
+		}	
+		.angle-left-overlay, .angle-right-overlay {
+			color: $edge-1;
+		}
+	}

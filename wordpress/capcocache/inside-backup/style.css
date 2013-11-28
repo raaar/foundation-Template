@@ -1,0 +1,29 @@
+/*
+Theme Name:         Mishcon Foundation Inside
+Theme URI:          http://themefortress.com/reverie/
+Description:        Built on the Reverie theme.
+Version:            0.0.1
+Author:             Raffaele Facondini & Dan Munday
+Author URI:         http://www.wellstudio.co.uk/
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* -------------------------------------------------- 
+
+	This stylesheet will not be loaded in the front
+	end by default.
+	
+	If you are using Sass, the main stylesheet in
+	css/style.css and scss/style.scss. Style.scss has
+	already loaded the main Foundation Sass and Normalize.
+	Start learning Sass today and have fun and enjoy
+	customizing Reverie.
+	
+	If you are using vanilla CSS to customize Reverie,
+	go to functions.php line 23 and follow the instruction
+	to enable CSS support, then start editing this file.
+
+-------------------------------------------------- */
+/*@import url("http://mishcon.wellstudio.co.uk/stylesheets/app.css");*/

@@ -1,0 +1,942 @@
+/***********************************************************************
+*
+*  Liquid Slider
+*  Kevin Batdorf
+*
+*  http://liquidslider.com
+*
+*  GPL license 
+*
+************************************************************************/
+/******************************************************
+* No JavaScript
+* Use this to apply styles when Javascript is disabled,
+* and be sure to include the ".no-js" class in your html 
+* markup.
+*******************************************************/
+/* line 18, ../sass/liquid-slider.scss */
+.no-js .liquid-slider {
+  overflow: scroll;
+}
+
+/******************************************************
+* Preloader
+* Use this to apply styles when Javascript is disabled,
+* and be sure to include the ".no-js" class in your html 
+* markup.
+*******************************************************/
+/* line 28, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .liquid-slider-preloader {
+  /*background: url(../images/loading.gif) #252525 no-repeat center 25%;*/
+  /* Do not edit below this line */
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/******************************************************************
+* Base Styles 
+* The styles here will apply to everything. I recommend you keep
+* the styles in here specific to mobile defices, then use
+* the media queries at the bottom to define further styles for larger
+* screen-sizes. Think Mobile First. But be cautious of how
+* your site will look in older IE browsers.
+*
+* Additional media queries are at the bottom of this document
+******************************************************************/
+/* line 49, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper {
+  margin: 0 auto;
+  /* Do not edit below this line */
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+
+/******************************************************
+* Main Container
+* This is the main container (minus the navigation).
+* Be sure to match the width with the .panel class, 
+* or it won't work properly. Also, width only applies
+* if you are not using the responsive setting.
+*
+* The responsive slider will interpret the width as the
+* max width instead
+*******************************************************/
+/* line 67, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .liquid-slider {
+  /*background: #f2f2f2;*/
+  width: 1030px;
+  /* Do not edit below this line */
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 75, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .panel-container {
+  /* Do not edit below this line */
+  position: relative;
+}
+
+/* line 80, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .liquid-slider .panel-container .fadeClass {
+  /* Do not edit below this line */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/******************************************************
+* Panels
+* This is for the panels. If you are using the 
+* responsive setting, this will act as the max-width
+* for the entire slider.
+*******************************************************/
+/* line 94, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .liquid-slider .panel {
+  width: 1030px;
+  /*min-height: 200px; DP in app.css instead */
+  /* Do not edit below this line */
+  display: block;
+  float: left;
+}
+.slider-id-panel.panel, .slider-id-2-panel.panel  {
+	/*padding:0px;
+	background:none;*/
+	/*border:none;*/
+}
+
+/******************************************************
+* This is mainly used to adjust the padding inside each 
+* panel. If you are using the responsive setting, you
+* need to use the settings below as this will not apply.
+*******************************************************/
+/* line 107, ../sass/liquid-slider.scss */
+.liquid-slider-wrapper .liquid-slider .panel-wrapper {
+  padding: 20px;
+  /* Do not edit below this line */
+  position: relative;
+}
+
+/******************************************************
+* Responsive Styles
+* Here are the main responsive styles. This mostly 
+* covers the arrows, and most of the settings can be
+* applied above.
+*******************************************************/
+/* line 119, ../sass/liquid-slider.scss */
+.liquid-responsive .liquid-slider {
+  /* Do not edit below this line */
+  width: 100%;
+  margin: 0;
+}
+
+/* line 124, ../sass/liquid-slider.scss */
+.liquid-responsive .liquid-slider .panel .panel-wrapper {
+  /*padding: 10px;*/
+}
+
+/* line 127, ../sass/liquid-slider.scss */
+[class*="arrow-"] {
+ /* width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 2px 5px 0;*/
+  display: block;
+}
+
+/* line 134, ../sass/liquid-slider.scss 
+.arrow-right {
+  background: url(../images/arrow.png) no-repeat top right;
+}*/
+
+/* line 137, ../sass/liquid-slider.scss 
+.arrow-left {
+  background: url(../images/arrow.png) no-repeat top left;
+}*/
+
+/* line 140, ../sass/liquid-slider.scss 
+.arrow-left:hover {
+  background: url(../images/arrow.png) no-repeat bottom left;
+}*/
+
+/* line 143, ../sass/liquid-slider.scss 
+.arrow-right:hover {
+  background: url(../images/arrow.png) no-repeat bottom right;
+}*/
+
+/* line 147, ../sass/liquid-slider.scss */
+.liquid-slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 151, ../sass/liquid-slider.scss */
+.liquid-slider p, .liquid-slider h3 {
+  margin: 5px 0;
+}
+
+/* styling the tabs at the bottom - DM */
+.slider-tab-panel ul.inline-list > li {
+	margin:0px;
+	background-color:#F0F0F0;
+}
+.slider-tab-panel ul#monitor-slider-nav-ul{
+	margin-left:0px;
+}
+.slider-tab-panel ul.inline-list > li.active {
+	background-color:#D55802;
+}
+
+/* styling the direction arrows on the slider - DM */
+#slider-id-wrapper a.arrow-left, #slider-id-wrapper a.arrow-right{
+	/*position: absolute;*/
+	/*top: 45%;*/ 
+	/*z-index:20;*/
+	/*font-size:50px;*/
+	/*cursor: pointer;*/
+}
+#slider-id-wrapper a.arrow-left{
+	/*left:0%;*/
+}
+#slider-id-wrapper a.arrow-right{
+	/*right:0%;*/
+}
+.hidden-slider{
+	opacity:0;
+	height:350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.touch .panel.header {
+	header {
+		figure.fixedratio {
+			background-image: url(/images/MishconDeReya-logo.png);
+		}
+	}
+}
+.lt-ie9 .panel.header {
+	.top-bar { 
+		ul > li { 
+			a.top-level { 
+				font-style: normal;
+				font-weight: 400;
+				text-transform:uppercase; 
+				font-size: 16px;
+				letter-spacing: 1px;
+				padding: 0 1.5em;			
+			}
+		}
+	}
+}
+.lt-ie9,.ie9 {
+	.panel.header {
+		header {
+			figure.fixedratio {
+				/* IE8 HACK http://stackoverflow.com/questions/4885145/ie-8-background-size-fix */
+				background-image: none;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dp.mishcon.pilotremote.net/images/MishconDeReya-logo-IE.png', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dp.mishcon.pilotremote.net/images/MishconDeReya-logo-IE.png',sizingMethod='scale')";		
+			}
+		}
+	}
+}
+
+
+
+
+
+
+	
+/* PANELS */
+.panel { background: $panelColor; }
+.panel.teaser {
+	margin-bottom: 0;
+}
+.opinions-closed { bottom: 12px !important; right: -4px !important; }
+
+.panel.opinion {
+	padding:0;
+	background:none; border:0;
+	.block-grid {
+		margin:0;
+		li {
+			padding:0;
+			text-align:center; 
+			background: $panelColor; border:1px solid $white;
+			&:first-child { border-left: none; }
+			&:last-child { border-right: none; } 
+			a { color: $txtColor; display: block; margin: 10px 0; font-size:ms(1); font-weight:normal; }
+			&.active { 
+				background: $secondary-orange; 
+				a { color:$white; } 
+			}
+			@include transition(0.3s , background);
+			&:hover{ 
+				background: $secondary-orange; 
+				a { color:$white; }
+			}
+		}
+	}
+	
+	dl,ul { margin-left:0; }
+	.tabs {		
+		dd a, li a { background: $panelColor; border:0; }
+		dd, li.active { border-left:0; border-top:0; text-align:center; }
+		dd.active, li.active { margin-top:0; }
+		dd.active a, li.active a { background: $secondaryColor; color:$white; }
+		dd a { font-size:ms(1); font-weight:normal; }
+		&.vertical { float:left; margin-right:15px; }
+		&.horizontal {
+			border-bottom: none;
+			dd, li.active { margin-right:2px; }
+			dd a, li a { padding:0 ms(0); }
+		}
+	}
+	.tabs dd:hover a { background: $secondaryColor; color:$white; }
+}
+.panel.opinion-leader {
+	background:none;
+	h3 { margin-top:0; font-size: ms(0); text-transform: uppercase;}
+}
+/* Javscript Components */
+ul.accordion {
+	border-bottom: 0;
+	li { 
+		border-top-color: #E6E6E6; 
+		.title {
+			h3 { 
+				color: $black;
+				small { color: #333333; }
+			}	
+		}
+		
+		&.active {
+			/*border-top-width: 1px;
+			border-top-color: #CB4601;*/
+			.title {
+				h3 {
+					color: #CB4601;
+					small { color: #999; }
+				}
+			}	
+		}
+		div.content { @include clearfix(); }
+	}
+}
+
+.panel.hero {
+	border: 0;
+	padding: 0;
+	background: none;
+	h1 { 
+		font-size: 250%;
+		font-family: $serifHeaderFont; 
+		font-weight: normal;
+		font-style: normal;
+		@media only screen and (min-width: $topBarBreakPoint) { max-width:60%; }
+		}
+	h2,p {
+			font-size: 180%;
+			line-height: inherit;
+			font-weight: normal;
+			color: darken($lightgrey,10%);
+			@media only screen and (min-width: $topBarBreakPoint) { max-width:85%; }
+			&.subheader { line-height: 1; }
+			q { 
+				color: $secondary-orange; 
+				&:hover { color: darken($secondary-orange,10%);}
+			}
+		}
+	a { 
+		color: $black; 
+		&:hover { color: $secondary-orange; }
+	}
+	h1, h2, p { margin-bottom: 1em; }
+	p:last-child { margin-bottom: 0; }
+	border-bottom: 1px solid $black;
+}
+#featuredContent { background: url(../images/loading.gif) center center #fff no-repeat; height: 300px; }
+#featuredContent section { display: none; }
+#featuredContent.orbit { background: none; }
+#featuredContent.orbit section { display: block; }    
+
+.orbit-wrapper {
+	span {
+		&.rotator {  background-image: url(../images/foundation/orbit/rotator-black.png); }
+		&.pause { 
+			background-image: url(../images/foundation/orbit/pause-black.png); 
+			&.active { background-image: url(../images/foundation/orbit/pause-black.png) }
+		}
+		&.mask.move { background-image: url(../images/foundation/orbit/timer-black.png); } 			
+	}
+	.slider-nav {
+		span {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; transition: opacity 400ms;
+			&.right { background-image: url(../images/foundation/orbit/right-arrow.png); }
+			&.left { background-image: url(../images/foundation/orbit/left-arrow.png); }
+		}
+	}
+	p { font-family: $sansSerifHeaderFont; }
+	&:hover .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+}
+
+/* LATEST PANELS */
+.panel.latest {
+	background-color: $lightgrey;
+	border: none;
+	color: darken($lightgrey,10%);
+	padding: 0em;
+	margin: 0em;
+	overflow: hidden;
+	@include transition(0.3s , background);
+	&:hover { 
+		background-color: $secondary-orange; 
+		a i, p i { color: $white; }
+	}
+	a i, p i { color: $lightgrey; }
+		
+	@media only screen and (max-width: ($sliderbreakpointtwocol - 1)) { min-height: $onecolpanelminheight; /* One column width */ } 
+	@media only screen and (max-width: ($sliderbreakpointthreecol - 1)) and (min-width: $sliderbreakpointtwocol) { min-height: $twocolpanelminheight; /* Two column */ }
+	@media only screen and (max-width: ($sliderbreakpointfourcol - 1)) and (min-width: $sliderbreakpointthreecol) { min-height: $threecolpanelminheight; /* Three column */ }
+	@media only screen and (min-width: $sliderbreakpointfourcol) { min-height: $fourcolpanelminheight; }
+	
+	header { display:none; }
+	figure { 
+		padding: 1em 0 0; margin: -1em; 
+		a { 
+			@media only screen and (max-width: 767px) { 
+				text-align:center; 
+				display:block;
+			}
+		}
+	}
+	&:not(.large) figure { 
+		//hidden by Raf 29-10
+		//padding-bottom: 2em; 
+	}
+	
+	header { 
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid darken($secondary-lightgrey,20%);
+		time { 
+			display: block;
+			text-transform: uppercase; 
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+			padding-top: 0.7em;
+		}
+		i { font-size: 1.6em; }
+	}
+	h1,h2,h3,h4,p { 
+		font-family: $sansSerifHeaderFont; 
+		font-weight: 400;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+	p { 
+		font-size: 115%; color: $black; 
+		margin-top:0;
+		text-transform:none; 
+		&:last-child { margin-bottom: 0; }
+	}
+	h1 { font-size: 200%; }
+	h2 { 
+		margin-top: 0;
+		font-size: 130%; 
+		line-height: 1.1; 
+		a { color: $black; 
+			&:hover { color: $white; }
+		}
+	} 
+	&:not(.large) h2 { 
+		min-height: 3.3em; 
+		height: 3.3em; 
+		line-height: 1.1em;
+		overflow:hidden;
+	}
+	&:not(.large) p {
+		min-height: 4.5em;
+		height: 4.5em; 
+		line-height: 1.5em;
+		overflow:hidden;
+		/*overflow-x:hidden;*/
+	}
+	&.large h2 { 
+		min-height: 1.1em; 
+		height: 1.1em; 
+		line-height: 1.1em;
+		margin-bottom: 0em;
+		overflow:hidden;
+		@media only screen and (max-width: ($sliderbreakpointtwocol - 1)) { height: auto; min-height: 3.3em; overflow: auto; /* One column width */ }
+	}
+	&.large p { 
+		font-size: 100%; 
+		line-height: 1.2em; 
+		min-height: 4.4em;
+		height: 4.4em; 
+	}
+}
+
+.ie8 {
+	.panel.latest {
+		h2 {
+			height: 60px;
+		}
+		p {
+			height: 80px;
+		}
+	}
+
+	.panel.latest, .latest.panel-sm{
+		//height: 320px;
+	}
+}
+
+.panel-wrapper {
+	padding: 10px !important;
+}
+
+.lt-ie9 {
+	.panel.latest {
+		figure { /* padding-bottom: 2em; */}	
+
+		&.large figure {
+			padding-bottom: 0;
+		}
+
+		h2 {
+			min-height: 3.3em; 
+			height: 3.3em; 
+			line-height: 1.1em;
+			overflow:hidden;	
+		}
+
+		&.large h2 {
+			height: auto;
+			min-height: 1.1em;
+		}
+	}
+}
+
+
+
+
+
+
+.slider-tab-panel {
+	#monitor-slider-nav-ul, #monitor-slider-nav-ul-second {
+		margin-left: 0;
+		&.inline-list { 
+			/*background-color: #222;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;*/
+	
+			li {
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+				background-color: $black;
+				
+				&:hover { 
+					/*box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.5) inset;*/
+					background-color: $orange;
+				}
+				&.active {
+					/*box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.5) inset;*/
+					background-color: darken($black,20%);
+					border-top: none;
+				}
+				a {
+					height: 12px;
+					outline: none;
+					/*border-left:1px solid $darkestgrey;*/
+					border-bottom: 11px solid $background;
+				}
+			}
+		}
+	}
+}
+.liquid-slider {
+	/*background-color:#f8e*/
+}
+.liquid-slider-wrapper .liquid-slider-preloader {
+	background: url(../images/loading.gif) $secondaryColor no-repeat center 25%;
+}
+
+#slider-id-wrapper,#slider-id-2-wrapper{
+	.arrows { float: right; margin-right: 1px; }
+	a {		 		
+		&.arrow-left, &.arrow-right {
+			font-size: 56px; 
+			position: relative;
+			display: inline-block;
+			
+		}
+		&.arrow-left {
+			color: $background;
+			//text-shadow: -3px 0px 0px $orange;
+			margin-right: 0.25em;
+			&:hover,&.active {
+				cursor: pointer;
+				//text-shadow: -3px 0px 0px $orange;
+				/*background:#252525;
+				opacity:0.5; filter: alpha(opacity=50);*/
+			}
+			
+		}
+		&.arrow-right {
+			color: $background;
+			//text-shadow: 3px 0px 0px $orange;
+			right: 1px;
+			&:hover,&.active { 
+				cursor: pointer;
+				//text-shadow: 3px 0px 0px $orange;
+				/*background:#252525;
+				opacity:0.5; filter: alpha(opacity=50);*/
+			}			
+		}
+	}
+}
+.lt-ie9,.ie9 { /*IE8&9 don't support CSS text shadow*/
+	#slider-id-wrapper,#slider-id-2-wrapper {
+		a {
+			&.arrow-left, &.arrow-right {
+				color: $secondary-orange;
+				&:hover,&.active { 
+					cursor: pointer;
+					color: $orange;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/* Touch Detection */
+.touch { 
+	.panel.latest {
+		&:not(.large) p, &:not(.large) h2, &.large h2 { overflow:auto; overflow-x:hidden; /* Scroll areas for touch screen */}
+	}
+}
+.liquid-responsive .liquid-slider .panel {
+	.panel-wrapper { padding:0; }
+	/*.panel-wrapper { padding-left: 8px; }
+	.panel-wrapper:first-child { padding-left: 0; }*/
+	
+}
+.slider-id-panel.panel, .slider-id-2-panel.panel  {
+	border: none;
+	border-left: 2px solid $background;
+	border-right: 2px solid $background;
+	margin-bottom: 0;
+	.panel { margin-bottom: 0; }
+	&:last-child { /*border-right: 0;*/ }
+}
+
+.panel.accreditation { 
+	border: none;
+	padding: none;
+	background: none;
+}
+
+
+/* CHANNELS BAR */
+.channels {
+	margin-bottom: 1em;
+
+	.pic {
+		text-align:center;
+		background-color:$lightgrey;
+		padding: 0.25em 1em 0.5em;
+		a { color:$black; 
+			h2 { border-bottom: 1px solid $white; padding-bottom: 0.3em; font-size: 85%; 
+				@media only screen and (min-width: 767px) { font-size: 100% !important; }
+				@media only screen and (min-width: 1000px) { font-size: 120% !important; }
+
+			}
+
+			&:hover { 
+				color:$orange; 
+				h2 { border-color: $orange; }
+			} 
+		}
+		img { 
+			max-width: 50%; 
+			@media only screen and (max-width: 767px) and (min-width: 580px) { max-width: 36%; }
+		}
+	}
+	
+	.focus img {
+		border: 0px solid #121212;
+  -webkit-transition: all 0.25s ease;
+     -moz-transition: all 0.25s ease;
+       -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+	}
+	 
+	.focus:hover img {
+		border: 0px solid #121212;
+		border-radius: 5%;
+	}
+
+	
+	h1,h2,h3,h4,p { 
+		color: inherit !important;
+		font-family: $sansSerifHeaderFont; 
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	p { 
+		font-size: 120%; color: $secondary-lightgrey; text-transform:none; 
+		&:last-child { margin-bottom: 0; }
+	}
+	h1 { font-size: 200%; }
+	h2 { 
+		font-size: 130%; 
+		min-height: 2.5em; 
+		height: 2.5em; 
+		line-height: 1.1em;
+	} 
+}
+
+
+
+
+
+
+
+
+.flexslider {
+	@include box-shadow(none);
+	li {
+		list-style: none;
+	}
+}
+.large-flexslider {
+	//border-bottom: 1px solid black;
+	overflow: hidden;
+	hr {
+		border-color: black;
+		margin: 0;
+		padding: 0;
+	}
+
+	.button {
+		border: none;
+		@include box-shadow(none);
+		&:hover {
+			border: none;
+			background: black;
+			color: white;
+		} 
+	}
+}
+
+.large-slide {
+	width: 100%;
+	//background: lightgray;
+	position: relative;
+
+	h1 { 
+		font-size: 150%;
+		font-family: $serifHeaderFont; 
+		font-weight: normal;
+		font-style: normal;
+		@media screen and (min-width: $topBarBreakPoint) { font-size:250%; max-width:60%; }
+		}
+	h2,p {
+			font-family: $sansSerifHeaderFont; 
+			font-size: 180%;
+			line-height: 30px;;
+			font-weight: normal;
+			color: darken($lightgrey,10%);
+			@media only screen and (min-width: $topBarBreakPoint) { max-width:85%; }
+			&.subheader { line-height: 1; }
+			q { 
+				color: $secondary-orange; 
+				//&:hover { color: darken($secondary-orange,10%);}
+			}
+		}
+	a { 
+		color: $black; 
+		&:hover { color: $secondary-orange; }
+	}
+}
+
+
+//Temp Fix for channel icons 
+.sm-slide {
+    figure {
+        text-align: center;
+    }
+    img {
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+/*
+	Overrides for the Small Academy slider
+*/
+.panel.latest.sm-slide.academy.academy-sm-slide.slider-id-2-panel {
+	background: #494d55;
+/*
+	$grad-url: "http://mishcon-inside/wp-content/themes/foundation-inside/img/gradient.jpg";
+	background-image: url($grad-url);
+	background-size: 100%;
+
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.$grad-url', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$grad-url', sizingMethod='scale')";
+*/
+	//@include background-image(radial-gradient(10px 10px, #494d55 10px, #26292f  110px));
+	h2 {
+		padding-top: 10px;
+		border-top: 1px solid white;
+		color: white;
+		font-family: $serifFont;
+		font-size: ms(3);
+		text-transform: none;
+		a {
+			color: white;
+			font-family: $serifFont;
+			font-size: ms(3);
+		}
+	}
+}
+
+.ie8 {
+	.panel.latest.sm-slide.academy.academy-sm-slide.slider-id-2-panel {
+		height: 263px;
+	}
+}
+/* .panel.latest:not(.large) h2, .latest.panel-sm:not(.large) h2, .latest.panel-md:not(.large) h2  */
+/*
+.panel.latest h2, .latest.panel-sm h2, .latest.panel-md:not h2 {
+	padding-top: 10px;
+	border-top: 1px solid white;
+	color: white;
+	font-family: $serifFont;
+	font-size: ms(3);
+	text-transform: none;
+	a {
+		color: white;
+		font-family: $serifFont;
+		font-size: ms(3);
+	}
+}
+*/
+
+
+.panel.latest:not(.large) h2, .latest.panel-sm:not(.large) h2, .latest.panel-md:not(.large) h2 {
+	min-height: 2.3em;
+	height:2.3em;
+}
+
+.panel.latest figure, .latest.panel-sm figure, .latest.panel-md figure {
+	height: 150px;
+	overflow: hidden;
+}
+.panel .liquid-caption {
+	margin-top: 1.4em;
+	p {
+		line-height: 18px;
+	}
+	hr {
+		border-color: white;
+		margin: 10px 0 0;
+	}
+}
+
+// Raf Styles 
+
+.more-info {
+	padding-top: 5px;
+}
+/*
+	Comments
+
+#comment-form-elements {
+	margin-left: 0;
+	li {
+		list-style: none;
+	}
+}
+.commentlist {
+	margin-left: 0;
+	li {
+		list-style: none;
+	}
+}
+#comment-nav li {
+	list-style: none;
+}
+#recaptcha_widget_div {
+	margin-bottom: 20px;
+}
+*/
+
+
+/*
+	Overrides 13 nov
+	Styling of navigation bar below slides
+*/
+.slider-tab-panel #monitor-slider-nav-ul.inline-list li a, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li a {
+	height: 1px;
+}
+
+ul.inline-list, ul.link-list {
+	margin: 0;
+}
+.slider-tab-panel #monitor-slider-nav-ul.inline-list li a, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li a {
+	border: none;
+}
+
+.no-nav {
+	margin-bottom: 0;
+	margin-top: 38px;
+}
+
+#slider-id-wrapper , #slider-id-2-wrapper {
+	a.arrow-left, a.arrow-right {
+		position: relative;
+		color: $orange;
+	}
+
+	.angle-left-overlay {
+		position: absolute;
+		left: 3px;
+		color: white;
+	}
+
+	.angle-right-overlay {
+		position: absolute;
+		right: 3px;
+		color: white;
+	}
+}

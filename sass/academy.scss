@@ -1,0 +1,264 @@
+.body-academy {
+    .l-top-nav, .top-nav {
+        border-bottom: none;
+    }
+    .academy-top-nav {
+        border-bottom: 1px solid white;
+    }
+
+}
+.body-academy .l-footer {
+    margin-top: 0;
+} 
+
+
+
+
+
+// Some base rules for Academy
+.academy-content, .content-academy {
+    h1 {
+        color: white;
+    }
+
+    a {
+        //color: white;
+        &:hover {
+            //color: $black;
+        }
+    }
+
+    .large-flexslider {
+        margin-top: 10px;
+    }
+
+    hr {
+        color: white;
+    }
+
+    .sub-nav {
+        border-bottom :1px solid white;
+
+        /* hack for the course page - A+ is assigned as child and causes the  parent to be selected */
+        li.current-page-parent {
+            a {
+                color: white;
+            }
+                    border-bottom: none;
+        }
+
+        li.current_page_item {
+            a {
+                color: white;
+            }
+            border-color: white;
+        }
+
+        a {
+            color: white;
+
+
+
+            &:hover {
+                color: darken(white, 20%);
+                //border-color: darken(white, 20%);
+            }
+        }
+    }
+}
+
+/* FLEXSLIDER Overrides */
+.academy-content, .content-academy {
+    .slider-id-panel.panel, .slider-id-panel.panel-sm, .slider-id-panel.panel-md, .slider-id-2-panel.panel, .slider-id-2-panel.panel-sm, .slider-id-2-panel.panel-md {
+        border-color: $academy-1;
+    }
+    .slider-tab-panel #monitor-slider-nav-ul.inline-list li a, .slider-tab-panel #monitor-slider-nav-ul-second.inline-list li a {
+        border-color: $academy-1;
+    }
+    .academy-content .flex-direction-nav a {
+        color: white;
+    }
+
+/* LIQUIDSLIDER Overrides */
+    #slider-id-wrapper a.arrow-right, #slider-id-2-wrapper a.arrow-right ,#slider-id-wrapper a.arrow-left, #slider-id-2-wrapper a.arrow-left {
+        text-shadow: none;
+    }
+
+    #slider-id-wrapper , #slider-id-2-wrapper {
+        a.arrow-left, a.arrow-right {
+            color: white;
+        }
+
+        .angle-left-overlay {
+            color:  $academy-1;
+        }
+
+        .angle-right-overlay {
+
+            color:  $academy-1;
+        }
+    }
+}
+
+
+
+
+.academy-search-form {
+    @extend .search-form; 
+    label {
+        color: white;
+    }
+    input {
+        background: white;
+    } 
+    .boxed-icon-sm {
+        background-color:white;
+        i {
+            color: $academy-1;
+        }
+    }
+}
+
+.academy-article {
+    @extend .l-article;
+    h1 , h2 {
+        color: white;
+    }
+
+    .postmetadata {
+        i {
+            color: white;
+        }
+    }
+
+    a {
+        color: white;
+        &:hover {
+            color: block;
+        }
+    }
+}
+
+
+.academy-sidebar {
+    @extend .sidebar;
+    h3 {
+        color: white;
+    }
+    a {
+        color: $academy-2;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+
+.academy-accordion {
+    @extend .list-accordion;
+    dt {
+        border-color: white;
+    }
+    h3, p , i, .info-cpd {
+        color: white;
+    }
+    time {
+        color: $academy-2;
+    }
+    .course-icon {
+        background: $orange;
+        background: url("../img/circle-icon-academy.gif") no-repeat;
+        i {
+            color: $academy-2;
+        }
+    }
+    .open-arrow, .close-arrow {
+        &:hover {
+            i {
+                color: darken(white, 20%);
+            }
+        }
+    }
+}
+
+.academy-content {
+    .flex-direction-nav a {
+        color: $orange;
+    }
+}
+
+.academy-btn {
+    @extend .button;
+    background: white;
+    color: $orange;
+    border-color: $black;
+    @include box-shadow(none);
+    &:hover {
+        border-color: $black;
+    }
+}
+
+.academy-large-slider {
+    background: $black;
+
+    h1, h2 {
+        color: white;
+        font-size: ms(3);
+        font-family: $serifFont;
+        margin: 0;
+    }
+
+    hr {
+        max-width: 300px;
+        border-color: white;
+        margin: 30px 0;
+    }
+
+    .l-text {
+        padding: 20px;
+        height: 500px;
+    }
+    .flex-direction-nav a {
+        color: white;
+    }
+}
+
+/*
+.academy-pagination {
+    .page-numbers{
+        >li>a, .academy-pagination>li>a, .pagination>li>span, .academy-pagination>li>span {
+            background: $black;
+            &:hover {
+                background: white;
+            }
+        }
+    }
+
+    ul.page-numbers li a, ul.page-numbers li a{
+        color: white;
+        &:hover {
+            color: $black;
+        }
+    }
+    .page-numbers>li>span.current {
+        color: $black;
+        background: white;
+    }
+}
+*/
+
+
+.academy-large-list {
+    @extend .large-list;
+
+    h1, h2 , h3, h4 ,h5, h6 ,p {
+        color: white;
+    }
+    p {
+        margin-top: 5px;
+        color: $black;
+    }
+    hr {
+        border-color: white;
+    }
+}

@@ -1,0 +1,29 @@
+//@import "compass/css3";
+//@import "settings";
+//@import "modular-scale";
+@import "modules";
+
+.content-custom {
+
+}
+
+.large-list-two {
+	//@mixin large-list-two( $heading, $paragraph , $link, $link-hover, $border, $background, $thumb-bk) 
+	@include large-list-two(  $black , $black ,    $black, $orange , $black , "" , white, white );
+}
+
+
+div.pagination-centered {
+	//@mixin pagination( $border, $color, $hover , $current ) 
+	@include pagination ( white, white, $black, $black );
+}
+
+
+
+
+
+
+
+
+
+

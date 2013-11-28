@@ -1,0 +1,202 @@
+/* Variables */
+$navbar-height: 55px;
+
+$nav-border: #2c2c2c;
+$lightgray: #efefef;
+$midgray: darken(#efefef, 70%);
+
+
+.app-navbar {
+	display: block;
+	overflow: hidden;
+	background: black;
+	position: relative;
+	z-index: 550;
+}
+
+.btn-navbar-menu {
+	height: $navbar-height;
+   	padding-top: 18px;
+	float: left;
+	width: 16%;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+
+	.line {
+		height: 3px;
+		max-width: 25px;
+		background: white;
+		margin: 0 auto 4px;
+	}
+	&:active {
+		background: $midgray;
+	}
+}
+
+.navbar-logo {
+	width: 68%;
+	height: $navbar-height;
+	float: left;
+	text-align: center;
+	//border-left: 1px solid $nav-border;
+	//border-right: 1px solid $nav-border;
+	position: relative;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);  
+
+	img {
+		width: 80%;
+  		height: auto;
+  		overflow: auto;
+  		margin: auto;
+  		position: absolute;
+  		top: 0; left: 0; bottom: 0; right: 0;
+  		@media screen and (min-width: 500px) { 
+  			width: 60%;
+  		}
+	}
+}
+
+.btn-navbar-search {
+	@extend .boxed-icon-md;
+	float: left;
+	width: 16%;
+	height: $navbar-height;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+	background: transparent;
+
+	i {
+		font-size: 20px;
+		line-height: $navbar-height;
+		color: white;
+	}
+
+	&:active {
+		background: $midgray;
+	}
+}
+
+// The search bar that appears once button is clicked
+.navbar-search {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $navbar-height;
+	background:  darken(#efefef, 70%);
+	z-index: 1000;
+	display: none;
+}
+.navbar-search-bar {
+	float: left;
+	width: 68%;
+	height: 45px;
+	input {
+	    height: 45px;
+    	margin: 5px 2%;
+    	width: 96%;
+    	border: none;
+	}
+}
+
+.navbar-search-search {
+	@extend .boxed-icon-md;
+	width: 16%;
+	height: $navbar-height;
+	float: left;
+	background: transparent;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+
+	i {	
+		font-size: 20px;
+		top:12px;
+		left: 20px;
+		line-height: $navbar-height;
+		color: white;
+	}
+	&:active {
+		background: black;
+	}
+}
+
+.navbar-search-close {
+	@extend .boxed-icon-md;
+	width: 16%;
+	height:$navbar-height;
+	float: left;
+	background: transparent;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+
+	i {
+		font-size: 20px;
+		top:11px;
+		left: 22px;	
+		line-height: $navbar-height;
+		color: white;
+	}
+	&:active {
+		background: black;
+	}
+}
+
+//Foundation 3 Offcanvas sidebar overrides
+.nav-bar {
+	margin-top: 0;
+}
+
+
+
+[role="complementary"], [role="main"] {
+	//padding: 0;
+}
+[role="complementary"] {
+	width: 84%;
+}
+.active [role="main"] {
+    margin-right: -84%;
+}
+.offcanvas-sidebar {
+	position: absolute;
+	z-index: 500;
+	height: 100%;
+	margin-top: - $navbar-height;
+	padding-top: $navbar-height;
+
+	background: #efefef;
+
+	ul {
+		margin-bottom: 0;
+	}
+	li {
+		padding: 17px;
+		border-bottom: 1px solid  rgba(0,0,0,0.06);
+		list-style: none;
+	}
+	a {
+		color: #2c2c2c;
+	}
+}
+
+
+.off-canvas-lightbox {
+	background: rgba(0, 0, 0, 0);
+}
+.off-canvas.active {
+	// Breaks transition in Firefox
+	overflow: hidden; 
+}
+.off-canvas.active .off-canvas-lightbox {
+	@include transition (0.3s background);
+	position: absolute;
+	z-index: 450;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+}

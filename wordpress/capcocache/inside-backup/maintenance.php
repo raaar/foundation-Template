@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Mishcon - Coming Soon</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="http://mishcon-inside/wp-content/themes/foundation-inside/css/app.css">
+
+	<script src="http://mishcon-inside/wp-content/themes/foundation-inside/js/vendor/custom.modernizr.js"></script>
+
+    <script src="http://mishcon-inside/wp-content/themes/foundation-inside/js/css3-mediaqueries.js"></script>
+
+</head>
+
+<body class="holding-page">
+    
+    <div class="row">
+        <div class="twelve columns">
+
+            <div class="holding-logo">
+                <img src="http://mishcon-inside/wp-content/themes/foundation-inside/img/MdR-Logotype_Orange.svg" onerror="this.onerror=null; this.src='http://mishcon-inside/wp-content/themes/foundation-inside/img/MdR-Logotype_Orange.png'">
+            </div>
+
+            <div class="holding-text">
+                <h2>The Academy.<br/><br/>Minds open<br/>November 4.</h2>
+
+                <a href="http://solcaraweb/solsearchmishcon/" class="button">Take me to the Intranet</a>
+            </div>
+
+        </div>
+    </div> 
+
+<script src="http://mishcon-inside/wp-includes/js/jquery/jquery.js"></script>
+
+
+<script type="text/javascript">
+        $('.holding-logo, .holding-text').hide().delay(300).fadeIn();
+    
+</script>
+
+
+</body>
+</html>
